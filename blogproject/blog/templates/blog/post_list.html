@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <title>My First blog Web page</title>
+</head>
+<body>
+ <header>
+   <h1>My blog posts are:</h1>
+ {% for post in posts %}
+<h1> Post Title :{{post.title}}
+<h1>Post Body:{{post.body}}
+<h1>Post Title:{{post.slug}}
+</h1>
+ {% endfor %}
+</body>
+</html>
